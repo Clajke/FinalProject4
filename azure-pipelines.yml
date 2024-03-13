@@ -14,4 +14,4 @@ steps:
     containerRegistry: DockerHubConnection
     tags: |
       $(Build.BuildId)
-      latest
+      1.0
