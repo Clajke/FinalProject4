@@ -19,8 +19,7 @@ spec:
         image: clajke/devopsazurepipeline:1.0
         ports:
         - containerPort: 5000
-      imagePullSecrets:
-      - name: mydockerhubsecret
+        
   strategy:
     type: RollingUpdate
     rollingUpdate:
