@@ -6,12 +6,11 @@ pool:
 
 steps:
 - task: Docker@2
-  displayName: 'Build and Push Docker image'
   inputs:
     command: buildAndPush
     repository: clajke/devopsazurepipeline
     dockerfile: $(Build.SourcesDirectory)/Dockerfile
     containerRegistry: DockerHubConnection
     tags: |
-      $(Build.BuildId)
+      1.0
       latest
